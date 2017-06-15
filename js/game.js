@@ -14,7 +14,7 @@ function preload() {
     game.load.image('diamond', 'assets/diamond.png');
     game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
     game.stage.disableVisibilityChange = true;
-    game.config.setForceTimeOut = true;
+
 }
 
 var player;
