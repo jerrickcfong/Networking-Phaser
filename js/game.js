@@ -106,16 +106,18 @@ game.world.resize(4000, 600);
 
     Game.playerMap = {};
 
-    playerMap.enableBody = true;
+    //playerMap.enableBody = true;
 
     Client.askNewPlayer();
 }
 
     Game.addNewPlayer = function(id,x,y){
         Game.playerMap[id] = game.add.sprite(x,y,'dude');
-        game.physics.arcade.enable(Game.playerMap[id]);
+        Game.physics.arcade.enable(Game.playerMap[id]);
         Game.playerMap[id].animations.add('left', [0, 1, 2, 3], 10, true);
         Game.playerMap[id].animations.add('right', [5, 6, 7, 8], 10, true);
+        Game.playerMap[id].body.collideWorldBounds = true;
+
     }
 
     Game.removePlayer = function(id){
