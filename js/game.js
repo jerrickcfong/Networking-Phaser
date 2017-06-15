@@ -149,8 +149,6 @@ game.world.resize(4000, 600);
         player.body.velocity.x = -120;
 
         player.animations.play('left');
-
-        Game.getCoordinates(player);
     };
 
     Game.moveRight = function(id) {
@@ -159,8 +157,6 @@ game.world.resize(4000, 600);
         player.body.velocity.x = 120;
 
         player.animations.play('right');
-
-        Game.getCoordinates(player);
     };
 
     Game.stop = function(id) {
