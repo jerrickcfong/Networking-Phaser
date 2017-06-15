@@ -42,7 +42,7 @@ io.on('connection',function(socket){
             //console.log('move to '+data.x+', '+data.y);
             socket.player.x = data.x;
             socket.player.y = data.y;
-            io.emit('move',socket.player);
+            //io.emit('move',socket.player);
         });
 
         socket.on('left', function(){
