@@ -113,7 +113,7 @@ game.world.resize(4000, 600);
 
     Game.addNewPlayer = function(id,x,y){
         Game.playerMap[id] = game.add.sprite(x,y,'dude');
-        Game.physics.arcade.enable(Game.playerMap[id]);
+        game.physics.arcade.enable(Game.playerMap[id]);
         Game.playerMap[id].animations.add('left', [0, 1, 2, 3], 10, true);
         Game.playerMap[id].animations.add('right', [5, 6, 7, 8], 10, true);
         Game.playerMap[id].body.collideWorldBounds = true;
