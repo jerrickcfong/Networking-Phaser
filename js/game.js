@@ -106,7 +106,7 @@ game.world.resize(4000, 600);
 
     Game.playerMap = {};
 
-    //playerMap.enableBody = true;
+    playerMap.enableBody = true;
 
     Client.askNewPlayer();
 }
