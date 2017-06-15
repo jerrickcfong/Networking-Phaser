@@ -22,8 +22,7 @@ function init() {
 
 init();
  
-port = server.listen(process.env.PORT || port);
-app.listen(port);
+server.listen(process.env.PORT || port);
 console.log('Started Socket.io, listening on port:' + port);
 
 io.on('connection',function(socket){
